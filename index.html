@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--"CTRL + ALT = i to open visual inspector"-->
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Zoom Scene</title>
+        
+    </head>
+    <body>
+        <a-assets>
+            <!-- Videos Zoom-->
+            <video id="camila_corte4" loop="true" src="./Assets/camilazoom_corte4.mp4" ></video>
+            <video id="camila_corte5" loop="true" src="./Assets/camilazoom_corte5.mp4" ></video>
+            <video id="camila_corte3" loop="true" src="./Assets/camilazoom_corte3.mp4" ></video>
+        </a-assets>
+        <a-scene>
+            <a-sky color="black"></a-sky>
+            <!--Cursor-->
+
+            <!-- Camera-->
+            <a-camera position="5.5 -1 0.3" rotation="-40 88 3.5">
+                <a-cursor></a-cursor>
+            </a-camera>
+
+            <!-- Videos Zoom-->
+            <a-video src="#camila_corte4" 
+            width="8" 
+            height="4.5" 
+            position="3 0.5 3"
+            rotation="0 -45 0"
+            ></a-video>
+            <a-video src="#camila_corte5" 
+            width="8" 
+            height="4.5" 
+            position="3 0.5 -4"
+            rotation="0 225 0"
+            ></a-video>
+            <a-video src="#camila_corte3"
+            width="13.3" 
+            height="6"
+            position="0.8 -10 -1"
+            rotation="-40 90 0"
+            ></a-video>
+        </a-scene>
+    </body>
+    <script type="text/javascript" src="scripts.js"></script>
+</html>
