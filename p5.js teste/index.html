@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
     
     <!--"CTRL + ALT = i to open visual inspector"-->
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     
+    <!--p5js-->
     <script src="p5.js"></script>
     <script src="p5.sound.js"></script>
-    
+    <script src="sketch.js"></script>
     <title></title>
 </head>
 
@@ -20,11 +22,10 @@
       <a-cursor></a-cursor>
     </a-camera>
     
-     <a-plane scr="#mycanvas" height="400" width="400"></a-plane>
+    <a-sky color="transparent"></a-sky>
      
      <a-sphere color="#CCC" position="0 0 10"></a-sphere>
   </a-scene>
 
 </body>
-  <script src="sketch.js"></script>
 </html>
