@@ -16,12 +16,15 @@
       geometry="primitive: sphere; radius: 0.005"
       material="color: #000000; shader: flat; opacity: 0.5">
         <a-animation attribute="scale"
-                    to="3 3 3">
+                    to="3 3 3"
+                    dur="1500"
+                    begin="cursor-fusing">
+    </a-animation>
     </a-camera>
     <a-sphere color="#AA0000" position="0 2 -15"
               event-set__enter="_event: mouseenter; material.color: #FF0000"
               event-set__leave="_event: mouseleave; material.color: #AA0000"
-              event-set__tarcol=""></a-sphere>
+              event-set__tarcol="_event: click; _target: #green; material.color: #00AAff"></a-sphere>
   </a-scene>
 
 </body>

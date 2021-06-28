@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+     <!--"CTRL + ALT = i to open visual inspector"-->
+     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>videosphere</title>
+</head>
+
+<body>
+  <a-scene> 
+    <a-assets>
+      <video id="video" src="./Assets/video360.mp4" loop="true" autoplay></video>
+      <video id="video2" src="./Assets/nuvens.mp4" loop="true" autoplay></video>
+    </a-assets>
+
+    <a-camera>
+      <a-cursor color="white"></a-cursor>
+    </a-camera>
+      
+    <a-videosphere src="#video2" rotation="0 -90 0"></a-videosphere>
+  </a-scene>
+</body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
