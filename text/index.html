@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--"CTRL + ALT = i to open visual inspector"-->
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+       <title>texto</title>
+    </head>
+    <body>
+        <a-scene>
+            <!--A-sky-->
+            <a-sky color="#0A100D"></a-sky>
+
+            <!--Cursor-->
+            <a-camera 
+            position="0 -0.1 1"
+            animation="property: position; to: 1 2 50; dur: 50000; repeat: indefinite; dir: alternate; loop: true">
+                <a-cursor color="white"></a-cursor>
+            </a-camera>
+
+            <!--Text 1-->
+            <a-entity 
+            position="0 0.3 0.5"
+            color="white"
+            text="value: Uma mente perdida no ciberespaço, navegando em seu corpo, angustiada pensou:"
+            width="30"></a-entity>
+
+            <!--Text 2-->
+            <a-entity 
+            position="0.4 -0.1 1.3"
+            color="white"
+            text="value: -Não posso recordar o que se sente ao ter um corpo..."
+            width="30"></a-entity>
+
+            <!--Text 3-->
+            <a-entity
+            position="-0.1 -0.3 1.7"
+            text="value: Quis gritar sua frustração, mas não tinha nada com que gritar."
+            color="white"
+            width="30"></a-entity>
+        </a-scene>
+    </body>
+</html>
